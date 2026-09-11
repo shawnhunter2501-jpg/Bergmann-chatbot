@@ -3,86 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bergmann Chatbot</title>
+  <title>Bergmann AI – KI-Kundenassistent</title>
 
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #172033;
+      padding: 0;
     }
 
-    header {
-      background: #101827;
+    body {
+      font-family: Arial, sans-serif;
+      background: #07111f;
       color: white;
-      padding: 20px 8%;
+      line-height: 1.6;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
       font-size: 22px;
       font-weight: bold;
     }
 
+    .logo span {
+      color: #4da3ff;
+    }
+
     .hero {
+      max-width: 1000px;
+      margin: auto;
+      padding: 100px 30px 80px;
       text-align: center;
-      padding: 100px 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #102744;
+      color: #79baff;
+      padding: 8px 16px;
+      border-radius: 30px;
+      margin-bottom: 25px;
+      font-size: 14px;
     }
 
     h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+      font-size: 54px;
+      line-height: 1.1;
+      margin-bottom: 25px;
+    }
+
+    h1 span {
+      color: #4da3ff;
     }
 
     .hero p {
-      font-size: 20px;
       max-width: 700px;
       margin: auto;
-      line-height: 1.6;
+      color: #b9c5d4;
+      font-size: 19px;
     }
 
-    .box {
-      max-width: 700px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    .buttons {
+      margin-top: 35px;
     }
 
-    .test {
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      margin: 7px;
+      border-radius: 9px;
+      text-decoration: none;
       font-weight: bold;
-      margin-top: 25px;
+    }
+
+    .primary {
+      background: #2583ff;
+      color: white;
+    }
+
+    .secondary {
+      border: 1px solid #40536b;
+      color: white;
+    }
+
+    .section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 60px 30px;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #0d1b2c;
+      border: 1px solid #1e3249;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #70b5ff;
+    }
+
+    .card p {
+      color: #aebdce;
+    }
+
+    .demo {
+      text-align: center;
+      background: #0d1b2c;
+      border: 1px solid #1e3249;
+      border-radius: 18px;
+      padding: 45px 25px;
+      margin-top: 40px;
+    }
+
+    .demo h2 {
+      margin-bottom: 15px;
+    }
+
+    .demo p {
+      color: #b9c5d4;
+    }
+
+    footer {
+      text-align: center;
+      color: #718096;
+      padding: 50px 20px;
+    }
+
+    @media (max-width: 750px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  Bergmann Chatbot
-</header>
+  <nav>
+    <div class="logo">Bergmann <span>AI</span></div>
+    <div>KI-Kundenservice</div>
+  </nav>
 
-<section class="hero">
-  <h1>KI-Kundenassistent für Unternehmen</h1>
+  <section class="hero">
+    <div class="badge">KI-Kundenservice für moderne Unternehmen</div>
 
-  <p>
-    Automatisieren Sie wiederkehrende Kundenanfragen und bieten Sie
-    Ihren Kunden rund um die Uhr schnelle Antworten.
-  </p>
-
-  <div class="box">
-    <h2>Digitale Kundenberatung – 24/7</h2>
+    <h1>
+      Kundenanfragen automatisch beantworten.
+      <span>24 Stunden am Tag.</span>
+    </h1>
 
     <p>
-      Der KI-Assistent beantwortet Kundenfragen automatisch,
-      informiert über Leistungen und unterstützt bei Kontaktanfragen.
+      Der Bergmann KI-Kundenassistent beantwortet häufige Fragen,
+      unterstützt Interessenten und hilft bei der Terminvereinbarung –
+      direkt auf Ihrer Website.
     </p>
 
-    <p class="test">
-      💬 Testen Sie den KI-Assistenten unten rechts.
-    </p>
-  </div>
-</section>
+    <div class="buttons">
+      <a class="button primary" href="#demo">KI-Assistent testen</a>
+      <a class="button secondary" href="#vorteile">Vorteile ansehen</a>
+    </div>
+  </section>
 
-<script src="//code.tidio.co/sfoicz4obievoq3qgseb8uc9zelzjomr.js" async></script>
+  <section class="section" id="vorteile">
+    <h2>Mehr Kundenservice. Weniger Aufwand.</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>24/7 erreichbar</h3>
+        <p>
+          Kunden erhalten auch außerhalb Ihrer Öffnungszeiten
+          sofort eine Antwort.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mitarbeiter entlasten</h3>
+        <p>
+          Wiederkehrende Kundenfragen werden automatisch beantwortet.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mehr Anfragen nutzen</h3>
+        <p>
+          Interessenten werden direkt informiert und können
+          zur Terminbuchung weitergeleitet werden.
+        </p>
+      </div>
+    </div>
+
+    <div class="demo" id="demo">
+      <h2>Probieren Sie den KI-Assistenten selbst aus</h2>
+      <p>
+        Öffnen Sie unten rechts den Chat und stellen Sie eine Frage.
+        Zum Beispiel: „Was kann der KI-Assistent für mein Unternehmen tun?“
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Bergmann AI · KI-Kundenservice für Unternehmen
+  </footer>
+
+  <!-- Tidio Chatbot -->
+  <script src="//code.tidio.co/sfoicz4obiev0q3qgse8buc9zelzjom.js" async></script>
 
 </body>
 </html>
